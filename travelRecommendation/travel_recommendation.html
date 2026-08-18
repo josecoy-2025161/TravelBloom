@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <!-- Enlace a FontAwesome para usar los íconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>TravelBloom</title>
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="./images/airplane-logo-img.png" alt="TravelBloom Logo" class="logo-img">
+            <h1 class="brand-name">TravelBloom</h1>
+        </div>
+
+        <ul class="navbar-links">
+            <li><a href="travel_recommendation.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="navbar-search">
+            <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
+            <button id="searchBtn">Search</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+    </nav>
+
+    <!-- Página de inicio / Hero Section -->
+    <main class="hero-section">
+
+        <!-- Contenedor para la imagen de fondo -->
+        <div class="background-overlay"></div>
+
+        <!-- Barra lateral de Redes Sociales -->
+        <aside class="social-sidebar">
+            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div class="hero-content">
+            <h2 class="hero-title">EXPLORE DREAM<br>DESTINATION</h2>
+            <p class="hero-description">
+                The Travel Recommendation App helps users explore popular travel destinations
+                through an interactive and user-friendly interface. It allows users to search for
+                beaches, temples, countries, or specific country names to view related cities along
+                with images and descriptions. The app dynamically fetches data from a structured
+                JSON file to display relevant results. It provides a simple and efficient way to
+                discover and plan travel destinations.
+            </p>
+            <button id="bookNowBtn" class="book-btn">Book Now</button>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
