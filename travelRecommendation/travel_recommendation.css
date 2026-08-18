@@ -361,3 +361,76 @@ body {
 .submit-btn:hover {
     background-color: #146c58;
 }
+
+/* =========================================
+   7. CONTENEDOR DE RESULTADOS DE BÚSQUEDA
+========================================= */
+.results-wrapper {
+    position: absolute;
+    top: 100px;
+    /* Ajusta la distancia desde la barra de navegación */
+    left: 100px;
+    /* Alineado a la izquierda para no tapar los botones sociales */
+    z-index: 10;
+    width: calc(100% - 200px);
+    /* Ocupa el ancho disponible */
+}
+
+.results-title {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.results-grid {
+    display: grid;
+    /* Esto crea columnas que se adaptan, mínimo 300px, máximo 1 fracción */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    gap: 30px;
+    /* Espacio entre las tarjetas */
+}
+
+/* Diseño individual de cada tarjeta de resultado */
+.result-card {
+    background-color: white;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+}
+
+.result-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.result-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.result-info h3 {
+    margin-bottom: 10px;
+    color: #0b1921;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.result-info p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+}
+
+.no-results {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
